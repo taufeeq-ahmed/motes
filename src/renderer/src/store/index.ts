@@ -4,7 +4,6 @@ import { unwrap } from 'jotai/utils'
 
 const loadNotes = async () => {
   const notes = await window.context.getNotes()
-
   // sort them by most recently edited
   return notes.sort((a, b) => b.lastEditTime - a.lastEditTime)
 }
