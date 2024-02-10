@@ -1,10 +1,7 @@
-import { selectedNoteIndexAtom } from '@/store'
-import { notesMock } from '@renderer/store/mocks/index'
-import { useAtom } from 'jotai'
+import { notesAtom, selectedNoteIndexAtom } from '@/store'
+import { useAtom, useAtomValue } from 'jotai'
 export const useNotesList = ({ onSelect }: { onSelect?: () => void }) => {
-  // const notes = useAtomValue(notesAtom)
-
-  const notes = notesMock
+  const notes = useAtomValue(notesAtom)
 
   const [selectedNoteIndex, setSelectedNoteIndex] = useAtom(selectedNoteIndexAtom)
 
