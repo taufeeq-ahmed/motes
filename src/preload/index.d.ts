@@ -1,6 +1,15 @@
+import { CreateNote, DeleteNote, GetNotes, ReadNote, WriteNote } from '@shared/types'
+
 declare global {
   interface Window {
-    // eslint-disable-next-line @typescript-eslint/ban-types
-    context: {}
+    // electron: ElectronAPI
+    context: {
+      locale: string
+      getNotes: GetNotes
+      readNote: ReadNote
+      writeNote: WriteNote
+      createNote: CreateNote
+      deleteNote: DeleteNote
+    }
   }
 }
