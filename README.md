@@ -1,10 +1,8 @@
 # notes-electron-app
 
-An Electron application with React and TypeScript
+<h1>MOTES</h1>
+<p>A simple and minimalistic note taking app using markdown built using ElectronJS </p>
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
 ## Project Setup
 
